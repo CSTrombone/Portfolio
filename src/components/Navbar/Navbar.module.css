@@ -1,0 +1,130 @@
+@import "../../vars.css";
+
+.sticky {
+    height: 90px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    z-index: 3;
+    margin: 0% 0%;
+    background: rgb(0, 0, 0);
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    top: 0px;
+    z-index: 3;
+    transition: 0.2s;
+}
+
+.navbar {
+    height: 90px;
+    position: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    z-index: 3;
+    margin: 0% 0%;
+    
+
+    top: 0px;
+    transition: 0.5s;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+    transition: 0.2s;
+}
+
+.menuBtn {
+    display: none;    
+}
+
+.menuItems {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a {
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 0px;
+
+        transition: 0.5s;
+    }
+
+    .sticky {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 0px;
+
+        transition: 0.2s;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;   
+        margin-right: -90%;     
+        
+    }
+
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+
+        padding: 24px 33px;
+        box-shadow: 0 5px 5px 5px rgba(0, 0, 0, .20);
+        
+    }
+
+    .menuOpen {
+        display: block;
+        position: fixed;
+        cursor: pointer;   
+        margin-top: 14%;
+        margin-right: -10%;   
+        z-index: 3;
+        
+    }
+
+}

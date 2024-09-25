@@ -1,0 +1,9 @@
+@import "../../vars.css";
+
+.container {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    background-color: rgba(12, 12, 12, 0.6);
+}
