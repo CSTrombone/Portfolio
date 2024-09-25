@@ -8,16 +8,17 @@ export const Experience = () => {
   return (
     <>
         <section className = {styles.container} id = "skills">
-            <h2> Skills </h2>
+        <div className = {styles.skillTitle}> Skills </div>
+            <h2 className = {styles.title}> Languages and libraries I am familiar with </h2>
             <div className = {styles.content}>
-                <div>{
+                <div className = {styles.skill}>{
                     skills.map((skill, id) => {
                         return(
                             <div key = {id}>
-                                <div> 
+                                <div className = {styles.skillImageContainer}> 
                                     <img src = {getImageUrl(skill.imageSrc)} alt = {skill.title}/>
                                 </div>
-                                <p> {skill.title} </p>
+                                <p className = {styles.skillNames}> {skill.title} </p>
                             </div>
                         )
                     })
