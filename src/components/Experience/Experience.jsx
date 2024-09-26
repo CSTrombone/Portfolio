@@ -1,50 +1,37 @@
-import React from 'react'
-import styles from "./Experience.module.css"
-import { getImageUrl } from "../../utils"
-import skills from "../../data/skills.json"
-import experience from "../../data/experience.json"
+import React from "react";
+import styles from "./Experience.module.css";
+import experience from "../../data/experience.json";
+import { getImageUrl } from "../../utils";
 
 export const Experience = () => {
   return (
     <>
-        <section className = {styles.container} id = "skills">
-        <div className = {styles.skillTitle}> Skills </div>
-            <h2 className = {styles.title}> Languages and libraries I am familiar with </h2>
-            <div className = {styles.content}>
-                <div className = {styles.skill}>{
-                    skills.map((skill, id) => {
-                        return(
-                            <div key = {id}>
-                                <div className = {styles.skillImageContainer}> 
-                                    <img src = {getImageUrl(skill.imageSrc)} alt = {skill.title}/>
-                                </div>
-                                <p className = {styles.skillNames}> {skill.title} </p>
-                            </div>
-                        )
-                    })
-                }</div>
-            </div>
-        </section>
-        <section className = {styles.xpContainer} id = "experience">
-            <h2> Experience </h2>
-            <div>
-                <div>
-                    <ul>{   
-                        experience.map((experienceItem, id) => {
-                            return(
-                                <li key = {id}>
-                                    <img 
-                                        src = {getImageUrl(experienceItem.imageSrc)} 
-                                        alt = {`${experienceItem.organisation} Logo`}
-                                    />
-                                </li>
-                            )
-                        })
-                        }
-                    </ul>
+    <div id = "experience"/>
+    <section className = {styles.invistext1}> Invisible </section>
+    <section className = {styles.invistext2}> Text </section>
+    <section className = {styles.container}>
+        <ul className = {styles.experience}>
+          {experience.map((experienceItem, id) => {
+            return (
+              <li key = {id} className = {styles.experienceItem}>
+                <img
+                  src = {getImageUrl(experienceItem.imageSrc)}
+                  alt = {`${experienceItem.organisation} Logo`}
+                />
+                <div className = {styles.experienceItemDetails}>
+                  <h3>{`${experienceItem.role} ${experienceItem.organisation}`}</h3>
+                  <p>{`${experienceItem.startDate}`}</p>
+                  <ul>
+                    {experienceItem.experiences.map((experience, id) => {
+                      return <li key = {id}> {experience} </li>;
+                    })}
+                  </ul>
                 </div>
-            </div>
-        </section>
+              </li>
+            );
+          })}
+        </ul>
+    </section>
     </>
   )
-}
+};

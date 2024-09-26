@@ -1,10 +1,19 @@
 [
     {
-      "role": "Software Engineer",
-      "organisation": "Google",
-      "startDate": "Sept, 2022",
+      "role": "Computer Science,",
+      "organisation": "UCO",
+      "startDate": "August 2020 - Present",
       "endDate": "Present",
-      "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-      "imageSrc": "history/google.png"
+      "experiences": ["Beginning Programming", "Programming I", "Programming II", "Discrete Structures", "Visual Programming", "Computer Organization and Architecture"],
+      "imageSrc": "experience/uco.png"
+    },
+
+    {
+      "role": "Experience",
+      "organisation": "",
+      "startDate": "",
+      "endDate": "",
+      "experiences": ["Data processing and algorithms with C++ thorugh my courses at UCO", "Frontend training with Windows Forms using C#", "Game development with both C# and JavaScript", "Lots and lots of studying"],
+      "imageSrc": "experience/uco.png"
     }
-  ]
+]

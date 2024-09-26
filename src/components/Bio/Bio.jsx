@@ -8,8 +8,7 @@ export const Bio = () => {
         <section className = {styles.container}>
             <div className = {styles.content}>
                 <h1 className = {styles.title}>I'm Austin Oden</h1>
-                <p className = {styles.description}> I'm a Computer Science student at the University of Central Oklahoma! </p>
-                <a href = "mailto:tboneoden@gmail.com" className = {styles.contactBtn}> My Gmail </a>               
+                <p className = {styles.description}> I'm a Computer Science student at the University of Central Oklahoma! </p>           
             </div>
             <img src = {getImageUrl("bio/bioImage.png")} alt = "Photo of me" className = {styles.bioImg}/>
             <div className = {styles.topBlur}/>

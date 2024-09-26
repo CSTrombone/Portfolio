@@ -1,70 +1,100 @@
 @import "../../vars.css";
 
-.container {
-    position: relative;
+.container { 
     color: var(--color-text);
-
-    margin-left: 10%;
-    margin-right: 50%;
-    border-radius: 15px;
-    background-color: rgba(12, 12, 12, 0.6);
-
-    justify-content: space-evenly;
-
-    top: 200px;
-    z-index: 2;
+    margin-top: 200px;
+    margin-left: 8%;
+    margin-right: -50%;
 }
 
-.title{
-    position: absolute;
-    color: var(--color-text);
-    font-size: 20px;
+.experience {
+    align-items: center;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.experienceItem {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    background: #19376d;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.experienceItem img {
+    width: 150px;
+}
+
+.experienceItemDetails {
+    font-family: var(--font-roboto);
+}
+
+.experienceItemDetails h3 {
+    font-size: 30px;
     font-weight: 500;
-    letter-spacing: 1.5;
-    top: 60px;
-    left: 20px;
-
 }
 
-.skillTitle{
-    position: absolute;
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    top: 15px;
-    left: 20px; 
+.experienceItemDetails p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.experienceItemDetails ul {
+    margin-top: 6px;
+    list-style-position: inside;
+    font-size: 25px;
+    list-style-type: disc;
+    margin-left: 17px;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .experience {
+        width: 100%;
+        gap: 9px;
+    }
+
+    .experienceItemDetails ul {
+        margin-top: 6px;
+        list-style-position: inside;
+        font-size: 15px;
+        list-style-type: disc;
+        margin-left: 17px;
+    }
+
+    .experienceItem img {
+        width: 0px;
+    }
+
+    .experienceItemDetails h3 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .invistext1 {
+        color: var(--color-bg);
+        
+    }
+    
+    .invistext2 {
+        color: var(--color-bg);
+        margin-top: -30%;
+    }
+}
+
+.invistext1 {
+    color: var(--color-bg);
     
 }
 
-.skill {
-    position: relative;
-    top: 100px;
-    left: 15px;
-    right: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 10%;
-    z-index: 2;
-}
-
-.skillImageContainer {
-    position: relative;
-    transform: scale(1);
-
-
-}
-
-
-.skillNames {
-    font-size: 20px;
-}
-
-@media (width) {
-    .skillNames {
-        font-size: (width / 2)px;
-    }
+.invistext2 {
+    color: var(--color-bg);
+    margin-top: -5%;
 }
