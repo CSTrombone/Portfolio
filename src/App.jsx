@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './App.module.css'
 import { Bio } from './components/Bio/Bio'
 import { Navbar } from './components/Navbar/Navbar'
