@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage": "https://cstrombone.github.io/Portfolio/",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
